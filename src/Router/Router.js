@@ -5,7 +5,7 @@ const Router = ()=>{
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="*" element={<Home />} /> 
+                    <Route path="React-shoppingcard/*" element={<Home />} />  
                 </Routes>
             </BrowserRouter>
         </>

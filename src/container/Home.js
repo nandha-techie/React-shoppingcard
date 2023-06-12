@@ -11,10 +11,10 @@ const Home = ()=>{
         <>
             <Header />
             <Routes>
-                <Route path="/" element={<Dashboard />} />
+                <Route path="" element={<Dashboard />} />
+                <Route path="cart" element={ <Cart /> } />
                 <Route path="/product/:id" element={<Product /> } />
-                <Route path="/cart" element={ <Cart /> } />
-                <Route path="/checkout/" element={<Checkout/>} >
+                <Route path="/checkout" element={<Checkout/>} >
                     <Route path="" element={<Checkout/>} />
                     <Route path=":id" element={<Checkout/>} />
                 </Route>

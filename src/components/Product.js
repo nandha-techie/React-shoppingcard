@@ -30,9 +30,9 @@ const Product = ()=>{
                 <div className='mt-4'>
                     {props.stock > 0 ? (
                     <>
-                        <button className="btn btn-success" onClick={()=> navigate(`/checkout/${props.id}`)}>Buy Now</button>
+                        <button className="btn btn-success" onClick={()=> navigate(`../checkout/${props.id}`)}>Buy Now</button>
                         { countStatus?.count > 0 ? (
-                            <button className=" btn btn-outline-danger ms-3" onClick={()=> navigate('/cart')}>Go to Cart</button>
+                            <button className=" btn btn-outline-danger ms-3" onClick={()=> navigate('../cart')}>Go to Cart</button>
                             ) : (
                                     <button className="ms-3 btn btn-success" onClick={addToCart}>Add to Cart</button>
                             )

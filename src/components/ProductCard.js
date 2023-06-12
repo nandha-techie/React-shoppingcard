@@ -4,7 +4,7 @@ export default function ProductCard(props){
     const navigate = useNavigate();
     return(
         <>
-        <div className="card m-2 card_size" onClick={()=> navigate(`/product/${props.id}`)}>
+        <div className="card m-2 card_size" onClick={()=> navigate(`product/${props.id}`)}>
             <div className="mt-2">
                 <img src={props.thumbnail}
                  height={150} width={180}

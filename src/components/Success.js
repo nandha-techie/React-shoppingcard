@@ -10,7 +10,7 @@ const Success =  ()=>{
             setCount(prevcount => prevcount - 1);
         }, 1000);
         setTimeout(()=>{
-            navigate('/');
+            navigate('../');
         }, 10000)
     }, [navigate]);
 

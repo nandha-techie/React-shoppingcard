@@ -42,7 +42,7 @@ const Checkout = ()=>{
             removeItem={()=>removeItem(item)}
              />
              ) }
-             <button className="btn btn-success" onClick={()=> navigate('/success')}>Place Order</button>
+             <button className="btn btn-success" onClick={()=> navigate('../success')}>Place Order</button>
             </>
             ) : (
                 <h3>No items in the Checkout</h3>

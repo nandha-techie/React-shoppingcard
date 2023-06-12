@@ -32,7 +32,7 @@ const Cart = ()=>{
             removeItem={()=>removeItemFromCart(item)}
              />
              ) }
-             <button className="btn btn-success" onClick={()=> navigate('/checkout')}>Go to Checkout</button>
+             <button className="btn btn-success" onClick={()=> navigate('../checkout')}>Go to Checkout</button>
             </>
             ) : (
                 <h3>No items in the cart</h3>
