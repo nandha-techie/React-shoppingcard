@@ -6,10 +6,11 @@ const Success =  ()=>{
     const navigate = useNavigate();
 
     useEffect(()=>{
-        setInterval(()=>{
+        const timeId = setInterval(()=>{
             setCount(prevcount => prevcount - 1);
         }, 1000);
         setTimeout(()=>{
+            clearInterval(timeId);
             navigate('../');
         }, 10000)
     }, [navigate]);
